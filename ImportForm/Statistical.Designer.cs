@@ -44,7 +44,7 @@
             "Outgoing",
             "Best-selling",
             "Revenue monthly"});
-            this.cbChoice.Location = new System.Drawing.Point(79, 54);
+            this.cbChoice.Location = new System.Drawing.Point(107, 54);
             this.cbChoice.Name = "cbChoice";
             this.cbChoice.Size = new System.Drawing.Size(121, 21);
             this.cbChoice.TabIndex = 0;
@@ -54,11 +54,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(23, 57);
+            this.label1.Location = new System.Drawing.Point(6, 57);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.Size = new System.Drawing.Size(95, 13);
             this.label1.TabIndex = 1;
-            this.label1.Text = "label1";
+            this.label1.Text = "select any options:";
             // 
             // groupBox1
             // 
