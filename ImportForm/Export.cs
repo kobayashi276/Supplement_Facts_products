@@ -31,13 +31,6 @@ namespace ImportForm
             conn.Open();
             DataSet ds = new DataSet();
             da.Fill(ds);
-            /*
-                        ds.Tables[0].Columns.Add("product_name", typeof(string));
-                        foreach (DataRow row in ds.Tables[0].Rows)
-                        {
-                            row["product_name"] = getProductName(row["id"].ToString());
-                        }
-            */
             dataGridViewAgent.DataSource = ds.Tables[0];
             conn.Close();
         }
@@ -152,9 +145,9 @@ namespace ImportForm
                     c.ExecuteNonQuery();
                 }
                 conn.Close();
-                dataGridViewOrderLoad(indexAgent);
                 Exporting exporting = new Exporting(txtAgent.Text, txtPhone.Text, txtAddress.Text, txtOrderDate.Text, txtOrderStatus.Text, txtPayment.Text, txtTotal.Text, txtMethod.Text, dataGridViewOrderDetail);
                 exporting.Show();
+                dataGridViewOrderLoad(indexAgent);
             }
 
         }

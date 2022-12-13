@@ -37,7 +37,9 @@ namespace ImportForm
             }
             else
             {
-                query = "";
+                MessageBox.Show("Comming Soon....");
+                return;
+                //query ="";
             }
             SqlDataAdapter da = new SqlDataAdapter(query, conn);
             conn.Open();

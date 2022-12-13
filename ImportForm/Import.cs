@@ -25,9 +25,14 @@ namespace ImportForm
 
         private void btnImport_Click(object sender, EventArgs e)
         {
+            int n;
             if (txtQuantity.Text == "")
             {
                 MessageBox.Show("Plese insert the quantity!");
+            }
+            else if (!int.TryParse(txtQuantity.Text, out n))
+            {
+                MessageBox.Show("Please insert the number, not string!");
             }
             else
             {
